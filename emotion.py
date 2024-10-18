@@ -3,12 +3,12 @@ os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'  # Suppress oneDNN warnings
 
 import cv2
 import numpy as np
-from cv2 import data as cv2_data # type: ignore
+from cv2 import data as cv2_data
 import tensorflow as tf
 from tensorflow.keras.models import load_model # type: ignore
 
 # Load the pre-trained emotion detection model
-model_path = 'D:\\Projects\\Emotion Detection\\Emotion-Detection\\model\\emotion.keras'
+model_path = 'emotion_model.h5'  # Use .h5 file
 model = load_model(model_path)
 
 # Define the emotion labels
@@ -30,7 +30,7 @@ while True:
     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     # Detect faces in the frame
-    faces = face_cascade.detectMultiScale(gray_frame, scaleFactor=1.1, minNeighbors=5)
+    faces = face_cascade.detectMultiScale(gray_frame, scaleFactor=1.1, minNeighbors=5, minSize=(48, 48))
 
     # Loop through the detected faces
     for (x, y, w, h) in faces:
