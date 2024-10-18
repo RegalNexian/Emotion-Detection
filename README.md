@@ -13,9 +13,7 @@ The model processes images through several convolutional layers, followed by poo
 - **Programming Language**: Python
 - **Libraries**:
   - TensorFlow (for building and training the model)
-  - NumPy (for numerical operations)
-  - Pandas (for data manipulation)
-  - OpenCV (for image processing)
+	@@ -19,77 +16,10 @@ The model processes images through several convolutional layers, followed by poo
   - scikit-learn (for data splitting)
 - **Environment**: Jupyter Notebook or any Python IDE
 
@@ -30,26 +28,18 @@ To run the Emotion Detection model, ensure you have the following installed:
   pip install tensorflow numpy pandas opencv-python scikit-learn
 
 ```bash
-
 - A compatible IDE or Jupyter Notebook for running the code.
-
 ## How to Use
-
 1. Clone the repository:
-
    ```bash
    git clone <repository-url>
    cd emotion-detection
    ```bash
-
 2. Install the required libraries:
-
    ```bash
    pip install -r requirements.txt
    ```bash
-
 3. Prepare your training and testing datasets in the specified folder structure:
-
    ```bash
 
    train/
@@ -75,7 +65,6 @@ To run the Emotion Detection model, ensure you have the following installed:
 5. Run the model:
 
    ```bash
-
    ```
 
 6. The model will save the best weights to the specified path after training.
@@ -93,3 +82,7 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Colab Notebook
+
+You can run this model directly in Google Colab using [Link Here](https://colab.research.google.com/drive/1Vihs2DNeTemnSQVTH8NDoRMNe4RYtDmr?usp=sharing).
