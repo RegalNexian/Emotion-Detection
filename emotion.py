@@ -8,7 +8,7 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model # type: ignore
 
 # Load the pre-trained emotion detection model
-model_path = 'D:\\Projects\\Emotion Detection\\model\\emotion.keras'
+model_path = 'D:\\Projects\\Emotion Detection\\Emotion-Detection\\model\\emotion.keras'
 model = load_model(model_path)
 
 # Define the emotion labels
